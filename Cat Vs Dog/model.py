@@ -19,7 +19,7 @@ X = X/255
 
 #print(X.shape) --> (100(h),100(w),3(color channel))
 
-#CNN seqential model
+#CNN sequential model
 model = Sequential()
 model.add(Conv2D(64,(3,3),activation='relu',input_shape = X.shape[1:]))
 model.add(MaxPooling2D((2,2)))
